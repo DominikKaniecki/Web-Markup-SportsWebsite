@@ -1,0 +1,4 @@
+Student name: Dominik Kaniecki
+Student number: 690828
+Student class: IT2A
+URL Student GitHub repository: 
