@@ -1,4 +1,5 @@
 Student name: Dominik Kaniecki
 Student number: 690828
 Student class: IT2A
-URL Student GitHub repository: 
+URL Student GitHub: https://github.com/DominikKaniecki
+URL Student GitHub repository: https://github.com/DominikKaniecki/Web-Markup-SportsWebsite
