@@ -1,7 +1,7 @@
 html
 {  
     height: 100%;
-    background-color: darkcyan;
+    background-color: #008b8b;
     font-family: Arial, Helvetica, sans-serif;
 }
 .indexImage
@@ -50,7 +50,7 @@ h4
 li.solid 
 {
     margin: 20px;
-    background-color: black;
+    background-color: #000000;
 }
 p.margin
 {
@@ -123,7 +123,7 @@ li a {
 {
     display: inline;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: darkcyan;
+    background-color: #008b8b;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -136,8 +136,8 @@ li a {
     width: 100%;
     order: 0;
     height: 200px;
-    color: white;
-    background-color: black;
+    color: #ffffff;
+    background-color: #000000;
     margin: 0;
     padding: 0;
     background-image: url(images/robotKneeling.jpg);
@@ -171,7 +171,7 @@ li a {
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    background-color: black;
+    background-color: #000000;
 }
 #articlesAndAside
 {
@@ -190,12 +190,12 @@ li.margin
     width: 400px;
     margin: 10px;
     margin: 20px;
-    background-color: black;
+    background-color: #000000;
 }
 #fiveBestProducts
 {
     order: 2;
-    color: white;
+    color: #ffffff;
     flex-grow: 0;
     flex-shrink: 0;
     width: min-content;
@@ -230,9 +230,9 @@ li.margin
     order: 1;
     width: 100%;
     height: 50px;
-    background-color: black;
+    background-color: #000000;
     justify-items: center;
-    color: white;
+    color: #ffffff;
     bottom: 0;
 }
 #contactEndFooter
@@ -253,7 +253,7 @@ li.margin
     align-items: center;
     color: #fff;
     width: 400px;
-    background-color: rgba(255, 170, 0);
+    background-color: #ffaa00;
     opacity: 50%;
     position: fixed;
     bottom: 0;
@@ -263,7 +263,7 @@ li.margin
 #productBody
 {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: darkcyan;
+    background-color: #008b8b;
     display: grid;
     width: 100%;
     height: 100%;
@@ -434,7 +434,7 @@ li.margin
 }
 table
 {
-    border: 2px solid #ffffff;
+    border: 2px solid #87e9c8;
     border-collapse: collapse;
     width: auto;
     margin: 0%;
