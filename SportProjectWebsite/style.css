@@ -140,7 +140,7 @@ li a {
     background-color: black;
     margin: 0;
     padding: 0;
-    background-image: url(/images/robotKneeling.jpg!d);
+    background-image: url(images/robotKneeling.jpg);
     background-position: 0px -250px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -276,15 +276,12 @@ li.margin
     grid-row-start: 2;
     grid-column: span 3;
 
-    flex-shrink: 0;
-    flex-grow: 0;
     width: 100%;
-    order: 0;
     height: 200px;
     color: white;
     margin: 0;
     padding: 0;
-    background-image: url(/images/robotKneeling.jpg!d);
+    background-image: url(images/robotKneeling.jpg);
     background-position: 0px -250px;
     background-repeat: no-repeat;
     background-size: cover;
