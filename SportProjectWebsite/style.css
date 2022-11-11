@@ -206,6 +206,10 @@ li.margin
     width: min-content;
     display: flex;
     flex-direction: column;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
 }
 .center p 
 {
@@ -535,13 +539,163 @@ td
     margin-bottom: 20px;
 }
 #articles
-    {
+{
         order: 0;
+        width: max-content;
+}
+#indexAside
+{
+    order: 1;
+    margin: 0;
+    padding: 0;
+    justify-self: right;
+    width: max-content;
+}
+
+/* TABLET */
+@media only screen and (max-width: 1279px) 
+{
+    #navbar
+    {
+        background-color: none;
+        margin-top: 0;
+        width: 100%;
+    }
+    #indexBody {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #008b8b;
+        display: flexbox;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #indexVideoFrame
+    {
+        order: 1;
+    }
+    .indexImage
+    {
+        height: 250px;
+        width: 400px;
+        object-fit: cover;
+    }
+    #indexVideoFrame
+    {
+        order: 2;
+    }
+    #indexVideo
+    {
+        height: 250px;
+        width: 400px;
+    }
+    #articlesAndAside
+    {
+        order: 4;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #articles
+    {
+        order: 2;
+        width: 70%;
     }
     #indexAside
     {
         order: 1;
+        width: 70%;
     }
+    #fiveBestProducts
+    {
+        width: 100%;
+    }
+    #fiveBestProductsList
+    {
+        width: 100%;
+    }
+    .hamli
+    {
+        width: 100%;
+    }
+    #productBody
+    {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: darkcyan;
+        display: grid;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 174 200 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    }
+    #productHeader
+    {
+        background-color: black;
+    }
+    .productImage
+    {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #tableAndAside
+    {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        align-items: flex-start;
+        flex-direction: row;
+        width: 100%;
+    }
+    #pricingAside
+    {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        margin-top: 0px;
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: center;
+        display: grid;
+        row-gap: 40px;
+        width: 100%;
+        padding: 0;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 150px 0;
+    }
+    #pricingProduct1
+    {
+        visibility: hidden;
+        display: none;
+    }
+    #pricingAside1Img2
+    {
+        width: 100%;
+    }
+    #pricingAside1Img3
+    {
+        width: 100%;
+    }
+    #pricingTable
+    {
+        order : 4;
+        color: #fff;
+        text-align: center;
+        border-radius: 2px;
+        border-color: #fff;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        font-size: medium;
+    }
+}
 /* MOBILE */
 @media all and (max-width: 480px)
 {
@@ -703,19 +857,31 @@ td
         object-fit: cover;
         object-position: -30px 0;
     }
+    #pricingProduct1
+    {
+        visibility: visible;
+        display: block;
+    }
+    #pricingAside1Img2
+    {
+        width: 100%;
+    }
+    #pricingAside1Img3
+    {
+        width: 100%;
+    }
     #productHeader
     {
-
-    width: 100%;
-    order: 0;
-    height: 200px;
-    color: white;
-    margin: 0;
-    padding: 0;
-    background-image: url(/images/robotKneeling.jpg!d);
-    background-position: 0px 0px;
-    background-repeat: no-repeat;
-    background-size: cover;
+        width: 100%;
+        order: 0;
+        height: 200px;
+        color: white;
+        margin: 0;
+        padding: 0;
+        background-image: url(/images/robotKneeling.jpg!d);
+        background-position: 0px 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     #navbarProduct
     {
@@ -729,22 +895,24 @@ td
         grid-template-columns: min-content 0;
         grid-template-rows: auto auto;
         align-items: flex-start;
+        justify-items: left;
+        justify-content: left;
         flex-direction: row;
     }
     table
     {
         border: 2px solid #ffffff;
         border-collapse: collapse;
-        width: auto;
         margin: 0%;
         padding: 0%;
+        font-size: 4vw;
     }
 
     th 
     {
         border: 2px solid #ffffff;
         border-collapse: collapse;
-        font-size: medium;
+        font-size: 4vw;
         padding: 2px;
     }
     h1
@@ -755,7 +923,7 @@ td
     {
         border: 2px solid #ffffff;
         border-collapse: collapse;
-        font-size: medium;
+        font-size: 3vw;
         padding: 2px;
         padding-top: 13px;
         padding-bottom: 13px;
@@ -769,9 +937,10 @@ td
         border-radius: 2px;
         border-color: #fff;
         margin-top: 0;
-        margin-left: 15px;
+        margin-left: 0;
         margin-right: 0;
-        font-size: medium;
+        width: 100%;
+        font-size: 4vw;
     }
     #pricingAside
     {
@@ -780,13 +949,18 @@ td
         margin-top: 0px;
         margin-left: 0;
         margin-right: 0;
-        justify-content: center;
+        justify-content: right;
+        float: left;
         display: grid;
         row-gap: 40px;
         width: min-content;
         padding: 0;
         grid-template-columns: 300px;
         grid-template-rows: 150px 150px 150px;
+    }
+    #tableAndCopyright
+    {
+        width: 100%;
     }
     #navbarContact
     {
@@ -827,108 +1001,5 @@ td
         width: 80%;
         margin-right: 100%;
         margin-bottom: 20px;
-    }
-}
-/* TABLET */
-@media only screen and (max-width: 1279px) 
-{
-    #navbar
-    {
-        background-color: none;
-        margin-top: 0;
-        width: 100%;
-    }
-    #indexBody {
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: #008b8b;
-        display: flexbox;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    #indexVideoFrame
-    {
-        order: 1;
-    }
-    .indexImage
-    {
-        height: 250px;
-        width: 400px;
-        object-fit: cover;
-    }
-    #indexVideoFrame
-    {
-        order: 2;
-    }
-    #indexVideo
-    {
-        height: 250px;
-        width: 400px;
-    }
-    #articlesAndAside
-    {
-        order: 4;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    #articles
-    {
-        order: 2;
-        width: 70%;
-    }
-    #indexAside
-    {
-        order: 1;
-        width: 70%;
-    }
-    #fiveBestProducts
-    {
-        width: 100%;
-    }
-    #fiveBestProductsList
-    {
-        width: 100%;
-    }
-    .hamli
-    {
-        width: 100%;
-    }
-    #productBody
-    {
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: darkcyan;
-        display: grid;
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        grid-template-columns: 33% 33% 33%;
-        grid-template-rows: 174 200 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-    }
-    #productHeader
-    {
-        background-color: black;
-    }
-    .productImage
-    {
-        height: 200px;
-        width: 100%;
-        object-fit: cover;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #tableAndAside
-    {
-        width: 100%;
-    }
-    #pricingAside
-    {
-        width: 100%;
     }
 }
